@@ -11,7 +11,7 @@
   #main-header .top-nav {
     padding-top: 3%; }
     #main-header .top-nav a.logo {
-      font-size: 1.5rem;
+      font-size: 30px;
       color: #ffffff;
       font-weight: 700; }
     #main-header .top-nav nav {
@@ -22,12 +22,12 @@
         padding-top: 0.3em; }
         #main-header .top-nav nav ul li a {
           color: #ffffff;
-          padding: 15px 10px;
-          font-size: 1em; }
+          padding: 15px 15px;
+          font-size: 20px; }
   #main-header #header-inner {
     color: #ffffff; }
     #main-header #header-inner .hero-header {
-      padding: 60px 0;
+      padding: 70px 0;
       text-align: center; }
       #main-header #header-inner .hero-header h1 {
         font-size: 50px;
@@ -38,15 +38,21 @@
         font-size: 20px;
         margin-bottom: 5%; }
       #main-header #header-inner .hero-header a {
+        text-align: center;
         text-decoration: none;
         color: #ffffff;
         border: 1.5px solid #ffffff;
-        padding: 10px 20px;
+        padding: 10px 35px;
         font-size: 20px;
         border-radius: 5px; }
         #main-header #header-inner .hero-header a:hover {
           background-color: #ffffff;
           color: #000000; }
+
+#services {
+  text-align: center; }
+  #services span i {
+    font-size: 3em; }
 
 * {
   margin: 0;

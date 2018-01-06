@@ -12,7 +12,7 @@
         padding-top: 3%;
         a{
             &.logo{
-                font-size: 1.5rem;
+                font-size: 30px;
                 color: #ffffff;
                 font-weight: 700;
             }
@@ -26,8 +26,8 @@
                     padding-top: 0.3em;
                 a{
                     color: #ffffff;
-                    padding: 15px 10px;
-                    font-size: 1em;
+                    padding: 15px 15px;
+                    font-size: 20px;
                 }
             }
         }
@@ -38,7 +38,7 @@
 #header-inner{
     color: $white;
     .hero-header{
-        padding: 60px 0;
+        padding: 70px 0;
         text-align: center;
              h1{
                 font-size: 50px;
@@ -51,13 +51,14 @@
                  margin-bottom: 5%;
              }
              a{
+                 text-align: center;
                  text-decoration: none;
                  color: $white;
                  border: 1.5px solid $white;
-                 padding: 10px 20px;
+                 padding: 10px 35px;
                  font-size: 20px;
                  border-radius: 5px;
-
+                
                  &:hover{
                      background-color: $white;
                      color: #000000;
