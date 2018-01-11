@@ -50,9 +50,18 @@
           color: #000000; }
 
 #services {
-  text-align: center; }
+  text-align: center;
+  padding: 5% 0; }
+  #services .row {
+    padding: 0 10px; }
   #services span i {
-    font-size: 3em; }
+    font-size: 3em;
+    margin-bottom: 5px; }
+  #services h2 {
+    font-size: 25px;
+    margin-bottom: 10px; }
+  #services p {
+    font-size: 20px; }
 
 * {
   margin: 0;
@@ -98,8 +107,8 @@ a {
   .container {
     max-width: 1140px; } }
 .row {
-  margin-left: -15px;
-  margin-right: -15px; }
+  margin-right: -15px;
+  margin-left: -15px; }
   .row::before, .row::after {
     content: "";
     display: table; }

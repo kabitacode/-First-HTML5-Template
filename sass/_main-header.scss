@@ -3,6 +3,7 @@
     height: 100vh;
     background-position: 0 10%;
     background-size: cover;
+
     .overlay{
         background-color: rgba(0, 0, 0, 0.65);
         width: 100%;
@@ -32,7 +33,7 @@
             }
         }
     }
-    //   End Navigation 
+    //   End Navigation
 }
 // End Top Navigation
 #header-inner{
@@ -49,6 +50,7 @@
                  color: #D0D0D0;
                  font-size: 20px;
                  margin-bottom: 5%;
+                 
              }
              a{
                  text-align: center;
@@ -58,7 +60,7 @@
                  padding: 10px 35px;
                  font-size: 20px;
                  border-radius: 5px;
-                
+
                  &:hover{
                      background-color: $white;
                      color: #000000;
