@@ -1,9 +1,9 @@
 @import url("https://fonts.googleapis.com/css?family=Lato:300,400,700");
 #main-header {
   background: url("../img/mountain.jpg") no-repeat;
-  height: 100vh;
   background-position: 0 10%;
-  background-size: cover; }
+  background-size: cover;
+  height: 40rem !important; }
   #main-header .overlay {
     background-color: rgba(0, 0, 0, 0.65);
     width: 100%;
@@ -24,20 +24,21 @@
           color: #ffffff;
           padding: 15px 15px;
           font-size: 20px; }
-  #main-header #header-inner {
+  #main-header #hero-header {
     color: #ffffff; }
-    #main-header #header-inner .hero-header {
-      padding: 70px 0;
+    #main-header #hero-header .hero-content {
+      padding-top: 80px;
+      padding-bottom: 0 !important;
       text-align: center; }
-      #main-header #header-inner .hero-header h1 {
+      #main-header #hero-header .hero-content h1 {
         font-size: 50px;
         font-weight: 300;
-        margin-bottom: 3%; }
-      #main-header #header-inner .hero-header p {
+        margin-bottom: 2%; }
+      #main-header #hero-header .hero-content p {
         color: #D0D0D0;
         font-size: 20px;
-        margin-bottom: 5%; }
-      #main-header #header-inner .hero-header a {
+        margin-bottom: 7%; }
+      #main-header #hero-header .hero-content a {
         text-align: center;
         text-decoration: none;
         color: #ffffff;
@@ -45,14 +46,15 @@
         padding: 10px 35px;
         font-size: 20px;
         border-radius: 5px; }
-        #main-header #header-inner .hero-header a:hover {
+        #main-header #hero-header .hero-content a:hover {
           background-color: #ffffff;
           color: #000000; }
 
 #services {
   text-align: center;
-  padding: 5% 0; }
-  #services .row {
+  padding: 5% 0;
+  box-sizing: border-box; }
+  #services .services-inner {
     padding: 0 10px; }
   #services span i {
     font-size: 3em;
@@ -61,7 +63,7 @@
     font-size: 25px;
     margin-bottom: 10px; }
   #services p {
-    font-size: 20px; }
+    font-size: 18px; }
 
 * {
   margin: 0;
@@ -71,7 +73,7 @@
 body {
   font-family: "Lato",sans-serif;
   color: #000000;
-  background-color: #d1c3c3;
+  background-color: #F2F2F2;
   line-height: 1.7;
   font-size: 16px; }
 
@@ -98,6 +100,9 @@ a {
   .container {
     width: 750px; } }
 @media (min-width: 992px) {
+  .col-md-4 {
+    max-width: 33.33333333%; } }
+@media (min-width: 992px) {
   .container {
     width: 970px; } }
 @media (min-width: 1200px) {
@@ -115,11 +120,29 @@ a {
   .row::after {
     clear: both; }
 
+.text-center {
+  text-align: center; }
+
 .col-md-4 {
   width: 33.33333333%; }
 
 @media (min-width: 992px) {
   .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12 {
     float: left; } }
+#column-2 .col-md-6 {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 41.666667%;
+  flex: 0 0 41.666667%;
+  max-width: 41.666667%; }
+#column-2 h2 {
+  font-size: 2rem; }
+#column-2 p {
+  font-size: 18px; }
+#column-2 .pw {
+  background-color: #ffffff;
+  padding: 7rem; }
+#column-2 img {
+  width: 100%;
+  height: 100%; }
 
 /*# sourceMappingURL=style.css.map */
