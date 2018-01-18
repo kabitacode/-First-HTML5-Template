@@ -4,21 +4,50 @@ footer{
   background: linear-gradient(50deg, #4dac71 50%, $black 50%);
   color: $white;
   position: relative;
+
+  @media screen and(max-width: 640px){
+    .two-column{
+        width: 100%;
+        p{
+          font-size: 10px;
+        }
+        h3{
+          font-size: 13px;
+        }
+        }
+
+    }
+
+
   .two-column{
     padding: 0 0 7% 7%;
+
     h3{
       font-size: 27px;
       padding-bottom: 15px;
       font-weight: 700;
+
+      @media(max-width: 640px){
+        font-size: 18px;
+      }
     }
     p{
       font-size: 18px;
       font-weight: 300;
+
+      @media(max-width: 640px){
+        font-size: 13px;
+      }
     }
       .map{
           li{
             display: inline-block;
             list-style-type: none;
+
+            @media(max-width: 640px){
+              font-size: 10px;
+            }
+
             a{
                 text-decoration: none;
                 color: $white;
@@ -27,10 +56,16 @@ footer{
                 font-size: 20px;
                 border: none;
 
+                @media(max-width: 640px){
+                  font-size: 11px;
+                }
+
                 &:hover{
                   background:none;
                   color: $white;
                 }
+
+
               }
             }
           }
@@ -52,6 +87,10 @@ footer{
             border: 1px solid $white;
             border-radius: 100%;
 
+            @media(max-width: 640px){
+              font-size: 10px;
+              padding: 6px;
+            }
             &:hover{
               background-color: $white;
               color: $black;
@@ -72,11 +111,16 @@ footer{
         color: $black;
         margin-bottom: 2rem;
 
+        @media screen and (max-width: 640px){
+          padding: 5px 5px;
+          font-size: 10px;
+        }
         &:hover{
           -webkit-box-shadow: 0px 0px 10px 10px  rgba(0, 0, 0, 0.64);
           -moz-box-shadow: 0px 0px 10px 10px  rgba(0, 0, 0, 0.64);
           box-shadow: 0px 0px 10px 10px  rgba(0, 0, 0, 0.64);
         }
+
       }
       input[type="submit"]{
         padding: 10px 30px;

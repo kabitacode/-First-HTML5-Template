@@ -42,13 +42,17 @@
         text-align: center;
         text-decoration: none;
         color: #ffffff;
-        border: 1.5px solid #ffffff;
-        padding: 10px 35px;
+        border: 1px solid #ffffff;
+        padding: 13px 35px;
         font-size: 20px;
         border-radius: 5px; }
         #main-header #hero-header .hero-content a:hover {
           background-color: #ffffff;
-          color: #000000; }
+          color: black; }
+          #main-header #hero-header .hero-content a:hover:hover {
+            -webkit-box-shadow: 0px 4px 12px 1px rgba(0, 0, 0, 0.64);
+            -moz-box-shadow: 0px 4px 12px 1px rgba(0, 0, 0, 0.64);
+            box-shadow: 0px 4px 12px 1px rgba(0, 0, 0, 0.64); }
 
 #services {
   text-align: center;
@@ -176,9 +180,12 @@ a {
     color: black;
     text-decoration: none;
     border-radius: 5px;
-    text-align: center; }
+    text-align: center;
+    background-color: #ffffff; }
     #column-2 .learn-more a:hover {
-      background-color: #ffffff; }
+      -webkit-box-shadow: 0px 4px 12px 1px rgba(0, 0, 0, 0.64);
+      -moz-box-shadow: 0px 4px 12px 1px rgba(0, 0, 0, 0.64);
+      box-shadow: 0px 4px 12px 1px rgba(0, 0, 0, 0.64); }
 
 #header-column-2 {
   padding: 8% 0 0 0;
@@ -200,18 +207,34 @@ footer {
   background: linear-gradient(50deg, #4dac71 50%, black 50%);
   color: #ffffff;
   position: relative; }
+  @media screen and (max-width: 640px) {
+    footer .two-column {
+      width: 100%; }
+      footer .two-column p {
+        font-size: 10px; }
+      footer .two-column h3 {
+        font-size: 13px; } }
   footer .two-column {
     padding: 0 0 7% 7%; }
     footer .two-column h3 {
       font-size: 27px;
       padding-bottom: 15px;
       font-weight: 700; }
+      @media (max-width: 640px) {
+        footer .two-column h3 {
+          font-size: 18px; } }
     footer .two-column p {
       font-size: 18px;
       font-weight: 300; }
+      @media (max-width: 640px) {
+        footer .two-column p {
+          font-size: 13px; } }
     footer .two-column .map li {
       display: inline-block;
       list-style-type: none; }
+      @media (max-width: 640px) {
+        footer .two-column .map li {
+          font-size: 10px; } }
       footer .two-column .map li a {
         text-decoration: none;
         color: #ffffff;
@@ -219,6 +242,9 @@ footer {
         footer .two-column .map li a i {
           font-size: 20px;
           border: none; }
+          @media (max-width: 640px) {
+            footer .two-column .map li a i {
+              font-size: 11px; } }
           footer .two-column .map li a i:hover {
             background: none;
             color: #ffffff; }
@@ -234,6 +260,10 @@ footer {
           padding: 8px 12px;
           border: 1px solid #ffffff;
           border-radius: 100%; }
+          @media (max-width: 640px) {
+            footer .two-column ul li a i {
+              font-size: 10px;
+              padding: 6px; } }
           footer .two-column ul li a i:hover {
             background-color: #ffffff;
             color: black; }
@@ -247,6 +277,11 @@ footer {
         font-size: 18px;
         color: black;
         margin-bottom: 2rem; }
+        @media screen and (max-width: 640px) {
+          footer .two-column .form input[type="text"],
+          footer .two-column .form input[type="password"] {
+            padding: 5px 5px;
+            font-size: 10px; } }
         footer .two-column .form input[type="text"]:hover,
         footer .two-column .form input[type="password"]:hover {
           -webkit-box-shadow: 0px 0px 10px 10px rgba(0, 0, 0, 0.64);
