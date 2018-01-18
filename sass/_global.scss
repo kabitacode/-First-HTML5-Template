@@ -14,7 +14,11 @@ body{
   background-color: #fff;
 	color: #444;
 }
-
+.two-column{
+  max-width:  41.666667%;; //480px or 30rem
+  float: left;
+  padding: 0 0 6% 6%;
+}
 a{
 
     text-decoration: none;

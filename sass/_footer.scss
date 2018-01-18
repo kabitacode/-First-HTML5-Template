@@ -1,0 +1,114 @@
+footer{
+  padding: 6% 0;
+  background-color: rgb(9, 12, 15);
+  background: linear-gradient(50deg, #4dac71 50%, $black 50%);
+  color: $white;
+  position: relative;
+  .two-column{
+    padding: 0 0 7% 7%;
+    h3{
+      font-size: 27px;
+      padding-bottom: 15px;
+      font-weight: 700;
+    }
+    p{
+      font-size: 18px;
+      font-weight: 300;
+    }
+      .map{
+          li{
+            display: inline-block;
+            list-style-type: none;
+            a{
+                text-decoration: none;
+                color: $white;
+                font-weight: 300;
+              i{
+                font-size: 20px;
+                border: none;
+
+                &:hover{
+                  background:none;
+                  color: $white;
+                }
+              }
+            }
+          }
+      }
+
+    ul{
+      li{
+        list-style-type: none;
+        display: inline-block;
+        margin: 10px 10px;
+
+        a{
+          text-decoration: none;
+
+          i{
+            font-size: 25px;
+            color: $white;
+            padding: 8px 12px;
+            border: 1px solid $white;
+            border-radius: 100%;
+
+            &:hover{
+              background-color: $white;
+              color: $black;
+            }
+          }
+        }
+      }
+    }
+
+    .form{
+      width: 50%;
+      padding: 20px 10px;
+      input[type="text"],
+      input[type="password"]{
+        padding: 15px 60px;
+        border-radius: 1rem;
+        font-size: 18px;
+        color: $black;
+        margin-bottom: 2rem;
+
+        &:hover{
+          -webkit-box-shadow: 0px 0px 10px 10px  rgba(0, 0, 0, 0.64);
+          -moz-box-shadow: 0px 0px 10px 10px  rgba(0, 0, 0, 0.64);
+          box-shadow: 0px 0px 10px 10px  rgba(0, 0, 0, 0.64);
+        }
+      }
+      input[type="submit"]{
+        padding: 10px 30px;
+        background:none;
+        border: 1px solid $white;
+        color: $white;
+        font-size: 20px;
+        cursor: pointer;
+        border-radius: 5px;
+
+        &:hover{
+          background-color: $white;
+          color: $black;
+          -webkit-box-shadow: 0px 0px 10px 10px  rgba(0, 0, 0, 0.64);
+          -moz-box-shadow: 0px 0px 10px 10px  rgba(0, 0, 0, 0.64);
+          box-shadow: 0px 0px 10px 10px  rgba(0, 0, 0, 0.64);
+
+        }
+      }
+    }
+  }
+
+  #copyright{
+    padding: 25px 0;
+    background-color: $black;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+
+    p{
+        font-size: 18px;
+        font-weight: 300;
+    }
+  }
+}

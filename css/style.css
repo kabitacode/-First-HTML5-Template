@@ -83,6 +83,11 @@ body {
   background-color: #fff;
   color: #444; }
 
+.two-column {
+  max-width: 41.666667%;
+  float: left;
+  padding: 0 0 6% 6%; }
+
 a {
   text-decoration: none; }
 
@@ -141,28 +146,20 @@ a {
 #column-2 {
   padding: 5rem 0;
   position: relative; }
-  #column-2::before {
-    content: "";
-    display: table; }
-  #column-2::after {
-    content: "";
-    display: table;
-    clear: both; }
-  #column-2 .feature {
+  #column-2 .two-column {
     max-width: 41.666667%;
     float: left;
-    margin-left: 6%;
-    padding-top: 5rem; }
-    #column-2 .feature img {
+    padding: 0 0 6% 6%; }
+    #column-2 .two-column img {
       height: 100%;
       width: 100%; }
-    #column-2 .feature h2 {
+    #column-2 .two-column h2 {
       font-size: 35px;
       font-weight: 300;
       margin-top: 8px;
       margin-bottom: 0.65rem;
       border-bottom: medium double rgba(144, 144, 144, 0.25); }
-    #column-2 .feature p {
+    #column-2 .two-column p {
       font-size: 20px;
       font-weight: 100; }
   #column-2 .content {
@@ -171,17 +168,112 @@ a {
     font-size: 2rem; }
   #column-2 p {
     font-size: 18px; }
+  #column-2 .learn-more a {
+    padding: 1rem 2.5rem;
+    border: 1px solid #968e8e;
+    font-size: 20px;
+    font-weight: 300;
+    color: black;
+    text-decoration: none;
+    border-radius: 5px;
+    text-align: center; }
+    #column-2 .learn-more a:hover {
+      background-color: #ffffff; }
 
 #header-column-2 {
-  padding: 8% 0;
-  text-align: center;
-  border-bottom: medium double rgba(144, 144, 144, 0.25); }
+  padding: 8% 0 0 0;
+  text-align: center; }
   #header-column-2 h1 {
     font-size: 40px;
     font-weight: 300;
-    margin-bottom: 1rem; }
+    margin-bottom: 2px; }
   #header-column-2 p {
     font-size: 25px;
     font-weight: 200; }
+  #header-column-2 .line {
+    border-bottom: medium double rgba(144, 144, 144, 0.25);
+    padding-top: 3rem; }
+
+footer {
+  padding: 6% 0;
+  background-color: #090c0f;
+  background: linear-gradient(50deg, #4dac71 50%, black 50%);
+  color: #ffffff;
+  position: relative; }
+  footer .two-column {
+    padding: 0 0 7% 7%; }
+    footer .two-column h3 {
+      font-size: 27px;
+      padding-bottom: 15px;
+      font-weight: 700; }
+    footer .two-column p {
+      font-size: 18px;
+      font-weight: 300; }
+    footer .two-column .map li {
+      display: inline-block;
+      list-style-type: none; }
+      footer .two-column .map li a {
+        text-decoration: none;
+        color: #ffffff;
+        font-weight: 300; }
+        footer .two-column .map li a i {
+          font-size: 20px;
+          border: none; }
+          footer .two-column .map li a i:hover {
+            background: none;
+            color: #ffffff; }
+    footer .two-column ul li {
+      list-style-type: none;
+      display: inline-block;
+      margin: 10px 10px; }
+      footer .two-column ul li a {
+        text-decoration: none; }
+        footer .two-column ul li a i {
+          font-size: 25px;
+          color: #ffffff;
+          padding: 8px 12px;
+          border: 1px solid #ffffff;
+          border-radius: 100%; }
+          footer .two-column ul li a i:hover {
+            background-color: #ffffff;
+            color: black; }
+    footer .two-column .form {
+      width: 50%;
+      padding: 20px 10px; }
+      footer .two-column .form input[type="text"],
+      footer .two-column .form input[type="password"] {
+        padding: 15px 60px;
+        border-radius: 1rem;
+        font-size: 18px;
+        color: black;
+        margin-bottom: 2rem; }
+        footer .two-column .form input[type="text"]:hover,
+        footer .two-column .form input[type="password"]:hover {
+          -webkit-box-shadow: 0px 0px 10px 10px rgba(0, 0, 0, 0.64);
+          -moz-box-shadow: 0px 0px 10px 10px rgba(0, 0, 0, 0.64);
+          box-shadow: 0px 0px 10px 10px rgba(0, 0, 0, 0.64); }
+      footer .two-column .form input[type="submit"] {
+        padding: 10px 30px;
+        background: none;
+        border: 1px solid #ffffff;
+        color: #ffffff;
+        font-size: 20px;
+        cursor: pointer;
+        border-radius: 5px; }
+        footer .two-column .form input[type="submit"]:hover {
+          background-color: #ffffff;
+          color: black;
+          -webkit-box-shadow: 0px 0px 10px 10px rgba(0, 0, 0, 0.64);
+          -moz-box-shadow: 0px 0px 10px 10px rgba(0, 0, 0, 0.64);
+          box-shadow: 0px 0px 10px 10px rgba(0, 0, 0, 0.64); }
+  footer #copyright {
+    padding: 25px 0;
+    background-color: black;
+    width: 100%;
+    position: absolute;
+    bottom: 0; }
+    footer #copyright p {
+      font-size: 18px;
+      font-weight: 300; }
 
 /*# sourceMappingURL=style.css.map */

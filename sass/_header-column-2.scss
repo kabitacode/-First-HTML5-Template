@@ -1,15 +1,19 @@
 #header-column-2{
-      padding: 8% 0;
+      padding: 8% 0 0 0;
       text-align: center;
-      border-bottom: medium double rgba(144, 144, 144, 0.25);
+
       h1{
           font-size: 40px;
           font-weight: 300;
-          margin-bottom: 1rem;
+          margin-bottom: 2px;
       }
 
       p{
         font-size: 25px;
         font-weight: 200;
+      }
+      .line{
+          border-bottom: medium double rgba(144, 144, 144, 0.25);
+          padding-top: 3rem;
       }
 }
