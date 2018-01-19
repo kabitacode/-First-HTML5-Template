@@ -36,7 +36,7 @@ footer{
       font-weight: 300;
 
       @media(max-width: 640px){
-        font-size: 13px;
+        font-size: 12px;
       }
     }
       .map{
@@ -114,6 +114,7 @@ footer{
         @media screen and (max-width: 640px){
           padding: 5px 5px;
           font-size: 10px;
+          margin-bottom: 0.30rem;
         }
         &:hover{
           -webkit-box-shadow: 0px 0px 10px 10px  rgba(0, 0, 0, 0.64);
@@ -139,6 +140,12 @@ footer{
           box-shadow: 0px 0px 10px 10px  rgba(0, 0, 0, 0.64);
 
         }
+
+        @media screen and (max-width: 640px){
+          padding: 5px 6px;
+          font-size: 10px;
+        }
+
       }
     }
   }
@@ -150,9 +157,17 @@ footer{
     position: absolute;
     bottom: 0;
 
+    @media screen and (max-width: 640px){
+        padding: 10px 0;
+      }
+
     p{
         font-size: 18px;
         font-weight: 300;
+
+        @media screen and(max-width: 640px){
+          font-size: 12px;
+        }
     }
   }
 }
