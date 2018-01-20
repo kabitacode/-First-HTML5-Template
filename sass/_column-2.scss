@@ -6,6 +6,7 @@
       max-width:  41.666667%;; //480px or 30rem
       float: left;
       padding: 0 0 6% 6%;
+
       img{
         height: 100%;
         width: 100%;
@@ -16,10 +17,14 @@
         margin-top: 8px;
         margin-bottom: 0.65rem;
         border-bottom: medium double rgba(144, 144, 144, 0.25);
+
+        @media(max-width: 640px){font-size: 23px};
       }
       p{
         font-size: 20px;
         font-weight: 100;
+
+        @media(max-width: 640px){font-size: 15px};
       }
     }
 
@@ -44,11 +49,13 @@
         border-radius: 5px;
         text-align: center;
         background-color: $white;
+
         &:hover{
           -webkit-box-shadow: 0px 4px 12px 1px  rgba(0, 0, 0, 0.64);
           -moz-box-shadow: 0px 4px 12px 1px  rgba(0, 0, 0, 0.64);
           box-shadow: 0px 4px 12px 1px  rgba(0, 0, 0, 0.64);
         }
+
       }
     }
 }

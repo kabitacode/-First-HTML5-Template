@@ -7,7 +7,6 @@ footer{
 
   @media screen and(max-width: 640px){
     .two-column{
-        width: 100%;
         p{
           font-size: 10px;
         }
@@ -22,6 +21,12 @@ footer{
   .two-column{
     padding: 0 0 7% 7%;
 
+    @media screen and (max-width: 640px){
+      width: 100%;
+      max-width: none;
+      padding: 0;
+    }
+
     h3{
       font-size: 27px;
       padding-bottom: 15px;
@@ -29,6 +34,7 @@ footer{
 
       @media(max-width: 640px){
         font-size: 18px;
+        padding-left: 15px;
       }
     }
     p{
@@ -37,6 +43,7 @@ footer{
 
       @media(max-width: 640px){
         font-size: 12px;
+        padding-left: 15px;
       }
     }
       .map{
@@ -72,24 +79,33 @@ footer{
       }
 
     ul{
+      @media screen and(max-width: 640px){
+          margin: 0;
+          padding: 0;
+      }
+
       li{
         list-style-type: none;
         display: inline-block;
         margin: 10px 10px;
 
+        @media screen and(max-width: 640px){
+            margin: 0 0 10px 13px;
+        }
+
         a{
           text-decoration: none;
 
           i{
-            font-size: 25px;
+            font-size: 20px;
             color: $white;
-            padding: 8px 12px;
+            padding: 8px 10px;
             border: 1px solid $white;
             border-radius: 100%;
 
             @media(max-width: 640px){
-              font-size: 10px;
-              padding: 6px;
+              font-size: 13px;
+              padding: 5px 7px;
             }
             &:hover{
               background-color: $white;
@@ -101,6 +117,11 @@ footer{
     }
 
     .form{
+      @media screen and (max-width: 640px){
+        width: 1%;
+        margin-bottom: 10px;
+        padding: 0 0 2rem 0.9rem;
+      }
       width: 50%;
       padding: 20px 10px;
       input[type="text"],

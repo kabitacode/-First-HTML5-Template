@@ -163,9 +163,15 @@ a {
       margin-top: 8px;
       margin-bottom: 0.65rem;
       border-bottom: medium double rgba(144, 144, 144, 0.25); }
+      @media (max-width: 640px) {
+        #column-2 .two-column h2 {
+          font-size: 23px; } }
     #column-2 .two-column p {
       font-size: 20px;
       font-weight: 100; }
+      @media (max-width: 640px) {
+        #column-2 .two-column p {
+          font-size: 15px; } }
   #column-2 .content {
     width: 40%; }
   #column-2 h2 {
@@ -194,9 +200,15 @@ a {
     font-size: 40px;
     font-weight: 300;
     margin-bottom: 2px; }
+    @media (max-width: 640px) {
+      #header-column-2 h1 {
+        font-size: 24px; } }
   #header-column-2 p {
     font-size: 25px;
     font-weight: 200; }
+    @media (max-width: 640px) {
+      #header-column-2 p {
+        font-size: 16px; } }
   #header-column-2 .line {
     border-bottom: medium double rgba(144, 144, 144, 0.25);
     padding-top: 3rem; }
@@ -208,27 +220,32 @@ footer {
   color: #ffffff;
   position: relative; }
   @media screen and (max-width: 640px) {
-    footer .two-column {
-      width: 100%; }
-      footer .two-column p {
-        font-size: 10px; }
-      footer .two-column h3 {
-        font-size: 13px; } }
+    footer .two-column p {
+      font-size: 10px; }
+    footer .two-column h3 {
+      font-size: 13px; } }
   footer .two-column {
     padding: 0 0 7% 7%; }
+    @media screen and (max-width: 640px) {
+      footer .two-column {
+        width: 100%;
+        max-width: none;
+        padding: 0; } }
     footer .two-column h3 {
       font-size: 27px;
       padding-bottom: 15px;
       font-weight: 700; }
       @media (max-width: 640px) {
         footer .two-column h3 {
-          font-size: 18px; } }
+          font-size: 18px;
+          padding-left: 15px; } }
     footer .two-column p {
       font-size: 18px;
       font-weight: 300; }
       @media (max-width: 640px) {
         footer .two-column p {
-          font-size: 12px; } }
+          font-size: 12px;
+          padding-left: 15px; } }
     footer .two-column .map li {
       display: inline-block;
       list-style-type: none; }
@@ -248,28 +265,40 @@ footer {
           footer .two-column .map li a i:hover {
             background: none;
             color: #ffffff; }
+    @media screen and (max-width: 640px) {
+      footer .two-column ul {
+        margin: 0;
+        padding: 0; } }
     footer .two-column ul li {
       list-style-type: none;
       display: inline-block;
       margin: 10px 10px; }
+      @media screen and (max-width: 640px) {
+        footer .two-column ul li {
+          margin: 0 0 10px 13px; } }
       footer .two-column ul li a {
         text-decoration: none; }
         footer .two-column ul li a i {
-          font-size: 25px;
+          font-size: 20px;
           color: #ffffff;
-          padding: 8px 12px;
+          padding: 8px 10px;
           border: 1px solid #ffffff;
           border-radius: 100%; }
           @media (max-width: 640px) {
             footer .two-column ul li a i {
-              font-size: 10px;
-              padding: 6px; } }
+              font-size: 13px;
+              padding: 5px 7px; } }
           footer .two-column ul li a i:hover {
             background-color: #ffffff;
             color: black; }
     footer .two-column .form {
       width: 50%;
       padding: 20px 10px; }
+      @media screen and (max-width: 640px) {
+        footer .two-column .form {
+          width: 1%;
+          margin-bottom: 10px;
+          padding: 0 0 2rem 0.9rem; } }
       footer .two-column .form input[type="text"],
       footer .two-column .form input[type="password"] {
         padding: 15px 60px;

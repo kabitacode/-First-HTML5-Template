@@ -6,11 +6,15 @@
           font-size: 40px;
           font-weight: 300;
           margin-bottom: 2px;
+
+          @media(max-width: 640px){font-size: 24px};
       }
 
       p{
         font-size: 25px;
         font-weight: 200;
+
+        @media(max-width: 640px){font-size: 16px};
       }
       .line{
           border-bottom: medium double rgba(144, 144, 144, 0.25);
