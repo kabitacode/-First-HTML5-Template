@@ -40,20 +40,16 @@ footer{
     p{
       font-size: 18px;
       font-weight: 300;
-
-      @media(max-width: 640px){
-        font-size: 12px;
-        padding-left: 15px;
-      }
+      @media(max-width: 640px){font-size: 12px; padding-left: 15px;}
+      @media(max-width: 768px){font-size: 15px; padding-left: 16px;}
     }
       .map{
           li{
             display: inline-block;
             list-style-type: none;
 
-            @media(max-width: 640px){
-              font-size: 10px;
-            }
+            @media(max-width: 640px){font-size: 10px;}
+            @media(max-width: 768px){font-size: 12px;}
 
             a{
                 text-decoration: none;
