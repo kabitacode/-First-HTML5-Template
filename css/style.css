@@ -3,29 +3,78 @@
   background: url("../img/mountain.jpg") no-repeat;
   background-position: 0 10%;
   background-size: cover;
-  height: 40rem !important; }
+  height: 40rem !important;
+  position: relative; }
   #main-header .overlay {
     background-color: rgba(0, 0, 0, 0.65);
     width: 100%;
     height: 100%; }
   #main-header .top-nav {
-    padding-top: 3%; }
-    #main-header .top-nav a.logo {
-      font-size: 30px;
-      color: #ffffff;
-      font-weight: 700; }
-    #main-header .top-nav a span {
-      font-weight: 300; }
-    #main-header .top-nav nav {
-      float: right; }
-      #main-header .top-nav nav ul li {
-        display: inline-block;
-        list-style-type: none;
-        padding-top: 0.3em; }
-        #main-header .top-nav nav ul li a {
-          color: #ffffff;
-          padding: 15px 15px;
-          font-size: 20px; }
+    padding: 0 100px;
+    width: 100%;
+    height: 80px;
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    transition: .5s;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1000; }
+    @media (max-width: 992px) {
+      #main-header .top-nav {
+        padding: 0 0; } }
+    #main-header .top-nav .toggle {
+      position: absolute;
+      right: 10px;
+      top: 20px;
+      padding: 5px;
+      display: none; }
+      @media (max-width: 992px) {
+        #main-header .top-nav .toggle {
+          display: block; } }
+      #main-header .top-nav .toggle i {
+        font-size: 30px;
+        color: black;
+        cursor: pointer; }
+    #main-header .top-nav a {
+      text-decoration: none; }
+      #main-header .top-nav a img {
+        width: 70px;
+        height: 70px;
+        padding-top: 10px; }
+    #main-header .top-nav ul {
+      position: relative;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      float: right;
+      transition: .5s; }
+      @media (max-width: 992px) {
+        #main-header .top-nav ul {
+          width: 100%;
+          top: 0;
+          display: none; }
+          #main-header .top-nav ul.active {
+            display: block; }
+          #main-header .top-nav ul li {
+            text-align: center;
+            background: #0f0e0e; } }
+      #main-header .top-nav ul li {
+        list-style: none; }
+        #main-header .top-nav ul li a {
+          position: relative;
+          display: block;
+          padding: 27px 20px;
+          font-size: 17px;
+          text-decoration: none;
+          text-transform: none;
+          transition: all .5s;
+          color: #ffffff; }
+          #main-header .top-nav ul li a:hover, #main-header .top-nav ul li a:active, #main-header .top-nav ul li a:focus, #main-header .top-nav ul li a:visited {
+            border-bottom: 1px solid rgba(77, 157, 248, 0.65);
+            height: 90%; }
   #main-header #hero-header {
     color: #ffffff; }
     #main-header #hero-header .hero-content {
@@ -99,7 +148,8 @@
 * {
   margin: 0;
   padding: 0;
-  border: 0; }
+  border: 0;
+  box-sizing: border-box; }
 
 body {
   font-family: "Lato",sans-serif;
@@ -206,28 +256,31 @@ a {
     font-size: 2rem; }
   #column-2 p {
     font-size: 18px; }
-  #column-2 .learn-more a {
-    padding: 1rem 2.5rem;
-    border: 1px solid #968e8e;
-    font-size: 20px;
-    font-weight: 300;
-    color: black;
-    text-decoration: none;
-    border-radius: 5px;
-    text-align: center;
-    background-color: #ffffff; }
-    @media screen and (max-width: 640px) {
-      #column-2 .learn-more a {
-        padding: 10px 10px;
-        font-size: 11px; } }
-    @media screen and (max-width: 768px) {
-      #column-2 .learn-more a {
-        padding: 12px 12px;
-        font-size: 13px; } }
-    #column-2 .learn-more a:hover {
-      -webkit-box-shadow: 0px 4px 12px 1px rgba(0, 0, 0, 0.64);
-      -moz-box-shadow: 0px 4px 12px 1px rgba(0, 0, 0, 0.64);
-      box-shadow: 0px 4px 12px 1px rgba(0, 0, 0, 0.64); }
+  #column-2 .learn-more {
+    position: absolute;
+    bottom: 0; }
+    #column-2 .learn-more a {
+      padding: 1rem 2.5rem;
+      border: 1px solid #968e8e;
+      font-size: 20px;
+      font-weight: 300;
+      color: black;
+      text-decoration: none;
+      border-radius: 5px;
+      text-align: center;
+      background-color: #ffffff; }
+      @media screen and (max-width: 640px) {
+        #column-2 .learn-more a {
+          padding: 10px 10px;
+          font-size: 11px; } }
+      @media screen and (max-width: 768px) {
+        #column-2 .learn-more a {
+          padding: 12px 12px;
+          font-size: 13px; } }
+      #column-2 .learn-more a:hover {
+        -webkit-box-shadow: 0px 4px 12px 1px rgba(0, 0, 0, 0.64);
+        -moz-box-shadow: 0px 4px 12px 1px rgba(0, 0, 0, 0.64);
+        box-shadow: 0px 4px 12px 1px rgba(0, 0, 0, 0.64); }
 
 #header-column-2 {
   padding: 8% 0 0 0;

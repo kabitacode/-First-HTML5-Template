@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Exercise 3</title>
     <link rel="stylesheet" href="css/style.css">
@@ -14,22 +14,24 @@
     <!--[if lt IE 9]>
     <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
+
 </head>
 <body>
         <header id="main-header">
             <div class="overlay">
-              <div class="container top-nav">
-         <a href="#" class="logo"><i class="fa fa-code" aria-hidden="true"></i>
-           DevMountain<span>Slope</span>
-         </a>
-         <nav>
-             <ul>
+              <div class="top-nav">
+                <a href="#" class="logo">
+                  <img src="./img/logo.png" alt="logo">
+                </a>
+                <div class="toggle">
+                  <i class="fa fa-bars"></i>
+                </div>
+                <ul class="active">
                  <li><a href="#">Home</a></li>
                  <li><a href="#">Skills</a></li>
                  <li><a href="#">Portofolio</a></li>
                  <li><a href="#">Contact</a></li>
              </ul>
-            </nav>
           </div>
             <section id="hero-header">
                 <div class="container">
@@ -114,9 +116,12 @@
                 <h2>Marketing</h2>
                 <p>Marketing is an activity, a set of institutions, and the process of creating, communicating, delivering and exchanging valuable offers for customers, clients, partners and the general public</p>
             </div>
-            <div class="learn-more">
-              <a href="#">Learn More</a>
+            <div class="container">
+              <div class="learn-more">
+                <a href="#">Learn More</a>
+              </div>
             </div>
+            
           </div>
         </div>
         </section>
@@ -155,7 +160,8 @@
             <p>Copyright <i class="fas fa-cog fa-spin"></i> 2018 Zhoel Studios | QODR Magelang</p>
           </footer>
         </footer>
+        <script src= "js/jquery.min.js" >//jquery 3.2.1.min.js</script>
+        <script src="js/script.js"></script>
 
-      <script src="./js/jquery-3.2.1.min.js"></script>
 </body>
 </html>
