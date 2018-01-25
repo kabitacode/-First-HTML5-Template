@@ -1,9 +1,15 @@
 *{
     margin: 0;
     padding: 0;
-    border: 0;
+    border: 0;      
     box-sizing: border-box;
-}
+
+    &::before,
+    &::after{
+      box-sizing: border-box;
+    }
+
+  }
 body{
     font-family: "Lato",sans-serif;
     color: #000000;
@@ -16,9 +22,10 @@ body{
 	color: #444;
 }
 .two-column{
-  max-width:  41.666667%;; //480px or 30rem
+  max-width:  41.666667%; //480px or 30rem
   float: left;
   padding: 0 0 6% 6%;
+  margin-left: 3%;
 }
 a{
 

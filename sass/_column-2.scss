@@ -3,10 +3,10 @@
   position: relative;
 
     .two-column{
-      max-width:  41.666667%;; //480px or 30rem
+      max-width:  41.666667%; //480px or 30rem
       float: left;
       padding: 0 0 6% 6%;
-
+      
       img{
         height: 100%;
         width: 100%;
@@ -23,8 +23,31 @@
       p{
         font-size: 20px;
         font-weight: 100;
-
+        margin-bottom: 13px;
         @media(max-width: 640px){font-size: 15px};
+      }
+
+      a{
+        text-decoration: none;
+        font-size: 17px;
+        font-weight: 300;
+        color: $black;
+        
+        &:hover{
+          i{
+            transition: .5s ease-out;
+            margin-left: 3%;
+          }
+        }
+        i{
+          font-size: 15px;
+          font-weight: 900;
+          color: rgb(14, 168, 240);
+          padding-left: 2.90%;
+
+        }
+
+       
       }
     }
 
@@ -41,6 +64,7 @@
     .learn-more{
       position: absolute;
       bottom: 0;
+      padding: 0 0 2% 35%;
       a{
         padding: 1rem 2.5rem;
         border: 1px solid rgb(150, 142, 142);

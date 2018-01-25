@@ -15,7 +15,7 @@
     height: 80px;
     background: rgba(255, 255, 255, 0.2);
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
-    transition: .5s;
+    transition: all .5s ease-in-out;
     position: fixed;
     top: 0;
     left: 0;
@@ -150,6 +150,8 @@
   padding: 0;
   border: 0;
   box-sizing: border-box; }
+  *::before, *::after {
+    box-sizing: border-box; }
 
 body {
   font-family: "Lato",sans-serif;
@@ -165,7 +167,8 @@ body {
 .two-column {
   max-width: 41.666667%;
   float: left;
-  padding: 0 0 6% 6%; }
+  padding: 0 0 6% 6%;
+  margin-left: 3%; }
 
 a {
   text-decoration: none; }
@@ -246,10 +249,24 @@ a {
           font-size: 23px; } }
     #column-2 .two-column p {
       font-size: 20px;
-      font-weight: 100; }
+      font-weight: 100;
+      margin-bottom: 13px; }
       @media (max-width: 640px) {
         #column-2 .two-column p {
           font-size: 15px; } }
+    #column-2 .two-column a {
+      text-decoration: none;
+      font-size: 17px;
+      font-weight: 300;
+      color: black; }
+      #column-2 .two-column a:hover i {
+        transition: .5s ease-out;
+        margin-left: 3%; }
+      #column-2 .two-column a i {
+        font-size: 15px;
+        font-weight: 900;
+        color: #0ea8f0;
+        padding-left: 2.90%; }
   #column-2 .content {
     width: 40%; }
   #column-2 h2 {
@@ -258,7 +275,8 @@ a {
     font-size: 18px; }
   #column-2 .learn-more {
     position: absolute;
-    bottom: 0; }
+    bottom: 0;
+    padding: 0 0 2% 35%; }
     #column-2 .learn-more a {
       padding: 1rem 2.5rem;
       border: 1px solid #968e8e;

@@ -15,13 +15,14 @@
        height: 80px;
        background: rgba(255, 255, 255, .2);
        box-shadow: 0 5px 15px rgba(0, 0, 0,.2);
-       transition: .5s;
+       transition: all .5s ease-in-out;
        position: fixed;
        top: 0;
        left: 0;
        right: 0;
        bottom: 0;
        z-index: 1000;
+
        @media(max-width: 992px){
            padding: 0 0;
        }

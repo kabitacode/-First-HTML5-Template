@@ -1,6 +1,6 @@
 $(document).ready(function(){
     $('.toggle').click(function(){
-      $('ul').slideToggle(1555);
+      $('ul').slideToggle();
     })
   })
 
