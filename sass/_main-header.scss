@@ -37,19 +37,35 @@
         i{
             font-size: 30px;
             color: $black;
-            cursor: pointer; 
+            cursor: pointer;
         }
     }
 
-    a{
-        text-decoration: none;
-        img{
-            width: 70px;
-            height: 70px;
-            padding-top: 10px;
-        }
-    }
+    .logo{
+      margin: 0;
+      padding: 0;
+      float: left;
 
+        a{
+          text-decoration: none;
+          img{
+              width: 70px;
+              height: 70px;
+              padding-top: 10px;
+          }
+
+          h3{
+            float: left;
+            position: relative;
+            top: 1rem;
+            left: 9rem;
+            text-transform: uppercase;
+            font-size: 25px;
+            font-weight: 300;
+            color: $white;
+          }
+        }
+}
        ul{
            position: relative;
            margin: 0;
@@ -74,7 +90,7 @@
 
            li{
                list-style: none;
-            
+
                a{
                    position: relative;
                    display: block;
@@ -89,23 +105,23 @@
                    &:active,
                    &:focus,
                    &:visited{
-                    
+
                     border-bottom: 1px solid rgba(77, 157, 248, 0.65);
                     height: 90%;
                 }
-               
+
                 }
            }
        }
-       
-       
+
+
     //   End Navigation
 }
 // End Top Navigation
 #hero-header{
     color: $white;
     .hero-content{
-        padding-top: 80px;
+        padding-top: 12rem;
         padding-bottom: 0!important;
         text-align: center;
              h1{
