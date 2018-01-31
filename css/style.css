@@ -10,7 +10,7 @@
     width: 100%;
     height: 100%; }
   #main-header .top-nav {
-    padding: 0 100px;
+    padding: 0 50px;
     width: 100%;
     height: 80px;
     background: rgba(255, 255, 255, 0.2);
@@ -36,7 +36,7 @@
           display: block; } }
       #main-header .top-nav .toggle i {
         font-size: 30px;
-        color: black;
+        color: #ffffff;
         cursor: pointer; }
     #main-header .top-nav .logo {
       margin: 0;
@@ -115,14 +115,15 @@
         border: 1px solid #ffffff;
         padding: 13px 35px;
         font-size: 20px;
-        border-radius: 5px; }
+        border-radius: 5px;
+        transition: .5s;
+        transform: scale3d(50); }
         #main-header #hero-header .hero-content a:hover {
           background-color: #ffffff;
-          color: black; }
-          #main-header #hero-header .hero-content a:hover:hover {
-            -webkit-box-shadow: 0px 4px 12px 1px rgba(0, 0, 0, 0.64);
-            -moz-box-shadow: 0px 4px 12px 1px rgba(0, 0, 0, 0.64);
-            box-shadow: 0px 4px 12px 1px rgba(0, 0, 0, 0.64); }
+          color: black;
+          -webkit-box-shadow: 0px 4px 12px 1px rgba(0, 0, 0, 0.64);
+          -moz-box-shadow: 0px 4px 12px 1px rgba(0, 0, 0, 0.64);
+          box-shadow: 0px 4px 12px 1px rgba(0, 0, 0, 0.64); }
         @media (max-width: 768px) {
           #main-header #hero-header .hero-content a {
             padding: 13px 13px;
@@ -351,8 +352,8 @@ footer {
     padding: 0 0 7% 7%; }
     @media screen and (max-width: 640px) {
       footer .two-column {
-        width: 100%;
         max-width: none;
+        margin: 0;
         padding: 0; } }
     footer .two-column h3 {
       font-size: 27px;
@@ -436,11 +437,17 @@ footer {
         font-size: 18px;
         color: black;
         margin-bottom: 2rem; }
-        @media screen and (max-width: 640px) {
+        @media (max-width: 640px) {
           footer .two-column .form input[type="text"],
           footer .two-column .form input[type="password"] {
             padding: 5px 5px;
             font-size: 10px;
+            margin-bottom: 0.30rem; } }
+        @media (max-width: 1024px) {
+          footer .two-column .form input[type="text"],
+          footer .two-column .form input[type="password"] {
+            padding: 5px 20px;
+            font-size: 12px;
             margin-bottom: 0.30rem; } }
         footer .two-column .form input[type="text"]:hover,
         footer .two-column .form input[type="password"]:hover {
@@ -480,5 +487,8 @@ footer {
       @media screen and (max-width: 640px) {
         footer #copyright p {
           font-size: 12px; } }
+
+input {
+  outline: none; }
 
 /*# sourceMappingURL=style.css.map */

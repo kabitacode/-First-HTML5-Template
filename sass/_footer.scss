@@ -22,8 +22,8 @@ footer{
     padding: 0 0 7% 7%;
 
     @media screen and (max-width: 640px){
-      width: 100%;
       max-width: none;
+      margin: 0;
       padding: 0;
     }
 
@@ -120,6 +120,7 @@ footer{
       }
       width: 50%;
       padding: 20px 10px;
+
       input[type="text"],
       input[type="password"]{
         padding: 15px 60px;
@@ -128,9 +129,14 @@ footer{
         color: $black;
         margin-bottom: 2rem;
 
-        @media screen and (max-width: 640px){
+        @media(max-width: 640px){
           padding: 5px 5px;
           font-size: 10px;
+          margin-bottom: 0.30rem;
+        }
+        @media(max-width: 1024px){
+          padding: 5px 20px;
+          font-size: 12px;
           margin-bottom: 0.30rem;
         }
         &:hover{
@@ -187,4 +193,8 @@ footer{
         }
     }
   }
+}
+
+input{
+  outline: none;
 }
