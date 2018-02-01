@@ -118,13 +118,14 @@ footer{
         margin-bottom: 10px;
         padding: 0 0 2rem 0.9rem;
       }
-      width: 50%;
+      width: 27.31rem;
       padding: 20px 10px;
 
       input[type="text"],
       input[type="password"]{
-        padding: 15px 60px;
-        border-radius: 1rem;
+        padding: 12px .75rem;
+        width: 100%;
+        border-radius: 2rem;
         font-size: 18px;
         color: $black;
         margin-bottom: 2rem;

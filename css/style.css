@@ -270,11 +270,14 @@ a {
     #column-2 .two-column a {
       text-decoration: none;
       font-size: 17px;
-      font-weight: 300;
+      font-weight: 900;
       color: black; }
-      #column-2 .two-column a:hover i {
-        transition: .5s ease-out;
-        margin-left: 3%; }
+      #column-2 .two-column a:hover {
+        color: #f63c0b; }
+        #column-2 .two-column a:hover i {
+          transition: .5s ease-out;
+          margin-left: 3%;
+          color: #f63c0b; }
       #column-2 .two-column a i {
         font-size: 15px;
         font-weight: 900;
@@ -328,7 +331,7 @@ a {
       #header-column-2 h1 {
         font-size: 24px; } }
   #header-column-2 p {
-    font-size: 25px;
+    font-size: 20px;
     font-weight: 200; }
     @media (max-width: 640px) {
       #header-column-2 p {
@@ -423,7 +426,7 @@ footer {
             background-color: #ffffff;
             color: black; }
     footer .two-column .form {
-      width: 50%;
+      width: 27.31rem;
       padding: 20px 10px; }
       @media screen and (max-width: 640px) {
         footer .two-column .form {
@@ -432,8 +435,9 @@ footer {
           padding: 0 0 2rem 0.9rem; } }
       footer .two-column .form input[type="text"],
       footer .two-column .form input[type="password"] {
-        padding: 15px 60px;
-        border-radius: 1rem;
+        padding: 12px .75rem;
+        width: 100%;
+        border-radius: 2rem;
         font-size: 18px;
         color: black;
         margin-bottom: 2rem; }
