@@ -18,29 +18,4 @@
     background-color: rgba(0, 0, 0, 0.72);
     z-index: -1;
   }
-.main-hero{
-  max-width: 100%;
-  max-height: 50%;
-  .skill-hero{
-    width: 25%;
-    float: left;
-    text-align: -webkit-center;
-    .circle{
-      border-radius: 100%;
-      background-color: rgb(255, 0, 61);
-      max-width: 10.1rem!important;
-      height: 9.1rem!important;
-      h2{
-        font-size: 25px;
-        padding-top: 1.5rem!important;
-        padding-bottom: 10px;
-      }
-
-      h5{
-        font-size: 20px;
-        font-weight: 300;
-      }
-    }
-  }
-}
 }

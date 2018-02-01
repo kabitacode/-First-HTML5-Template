@@ -513,24 +513,5 @@ input {
     height: 100%;
     background-color: rgba(0, 0, 0, 0.72);
     z-index: -1; }
-  #skill .main-hero {
-    max-width: 100%;
-    max-height: 50%; }
-    #skill .main-hero .skill-hero {
-      width: 25%;
-      float: left;
-      text-align: -webkit-center; }
-      #skill .main-hero .skill-hero .circle {
-        border-radius: 100%;
-        background-color: #ff003d;
-        max-width: 10.1rem !important;
-        height: 9.1rem !important; }
-        #skill .main-hero .skill-hero .circle h2 {
-          font-size: 25px;
-          padding-top: 1.5rem !important;
-          padding-bottom: 10px; }
-        #skill .main-hero .skill-hero .circle h5 {
-          font-size: 20px;
-          font-weight: 300; }
 
 /*# sourceMappingURL=style.css.map */
