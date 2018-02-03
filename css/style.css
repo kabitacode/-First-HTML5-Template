@@ -518,8 +518,7 @@ input {
 
 #skill {
   position: relative;
-  padding: 30% 0;
-  background-color: rgba(0, 117, 255, 0.5); }
+  padding: 0 0 30% 0; }
   #skill::before {
     content: "";
     position: relative;
@@ -529,9 +528,20 @@ input {
     height: 100%;
     background-color: rgba(0, 0, 0, 0.72);
     z-index: -1; }
-  #skill .main-hero header h1 {
-    text-align: left;
+  #skill .main-hero h1 {
     font-size: 30px;
-    font-weight: 900; }
+    font-weight: 900;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    margin: 3rem 0 3rem 0; }
+  #skill .main-hero ul li {
+    display: inline-block;
+    list-style: none;
+    padding: 0 10px; }
+    #skill .main-hero ul li a {
+      text-decoration: none;
+      background-color: #0aa4fa;
+      padding: 10px 17px;
+      color: #ffffff; }
 
 /*# sourceMappingURL=style.css.map */

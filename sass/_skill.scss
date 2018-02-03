@@ -1,7 +1,6 @@
 #skill{
   position: relative;
-  padding: 30% 0;
-  background-color: rgba(0, 117, 255, 0.5);
+  padding: 0 0 30% 0;
 
   &::before{
     content: "";
@@ -14,12 +13,26 @@
     z-index: -1;
 }
     .main-hero{
-    header{
       h1{
-          text-align: left;
           font-size: 30px;
           font-weight: 900;
+          -webkit-font-smoothing: antialiased;
+          -moz-osx-font-smoothing: grayscale;
+          margin: 3rem 0 3rem 0;
         }
-    }
+
+        ul{
+          li{
+            display: inline-block;
+            list-style: none;
+            padding: 0 10px;
+              a{
+                text-decoration: none;
+                background-color: rgb(10, 164, 250);
+                padding: 10px 17px;
+                color: $white;
+              }
+          }
+        }
   }
 }
