@@ -1,3 +1,4 @@
+// Jquery toggle menu
 $(document).ready(function(){
     $('.toggle').click(function(){
       $('ul').slideToggle();
@@ -12,3 +13,21 @@ $(document).ready(function(){
         $('.top-nav').css('background','transparent');
     }
   })
+
+  // FlowType
+$('body').flowtype({
+  minimum   : 500,
+  maximum   : 1200,
+  minFont   : 12,
+  maxFont   : 40,
+  fontRatio : 30
+});
+
+$('article').flowtype({
+    fontRatio : 36
+});
+
+$('#main-header').function({
+  maxFont : 40,
+  minimum : 20,
+});

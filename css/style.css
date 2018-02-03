@@ -171,7 +171,28 @@ body {
   font-family: "Lato",sans-serif;
   color: #000000;
   line-height: 1.7;
-  font-size: 16px; }
+  font-size: 18px; }
+
+h1, h2, h3, h4, h5, h6, p {
+  line-height: 1.45; }
+
+h1 {
+  font-size: 4em; }
+
+h2 {
+  font-size: 3em; }
+
+h3 {
+  font-size: 2em; }
+
+h4 {
+  font-size: 1em; }
+
+h5 {
+  font-size: 0.90em; }
+
+h6 {
+  font-size: 0.80em; }
 
 .bg-white {
   background-color: #fff;
@@ -426,7 +447,7 @@ footer {
             background-color: #ffffff;
             color: black; }
     footer .two-column .form {
-      width: 27.31rem;
+      width: 100%;
       padding: 20px 10px; }
       @media screen and (max-width: 640px) {
         footer .two-column .form {
@@ -497,13 +518,8 @@ input {
 
 #skill {
   position: relative;
-  padding: 100px 0;
-  background-image: url(../img/skill.jpg);
-  background-attachment: fixed;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: 0 10%;
-  z-index: 0; }
+  padding: 30% 0;
+  background-color: rgba(0, 117, 255, 0.5); }
   #skill::before {
     content: "";
     position: relative;
@@ -513,5 +529,9 @@ input {
     height: 100%;
     background-color: rgba(0, 0, 0, 0.72);
     z-index: -1; }
+  #skill .main-hero header h1 {
+    text-align: left;
+    font-size: 30px;
+    font-weight: 900; }
 
 /*# sourceMappingURL=style.css.map */
