@@ -259,6 +259,12 @@ a {
     .col-md-4 {
       max-width: 100%; } }
 
+.col-md-6 {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 50%;
+  flex: 0 0 50%;
+  max-width: 50%; }
+
 @media (min-width: 992px) {
   .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12 {
     float: left; } }
@@ -516,10 +522,10 @@ footer {
 input {
   outline: none; }
 
-#skill {
+#portofolio {
   position: relative;
-  padding: 0 0 30% 0; }
-  #skill::before {
+  padding: 0; }
+  #portofolio::before {
     content: "";
     position: relative;
     top: 0;
@@ -528,20 +534,45 @@ input {
     height: 100%;
     background-color: rgba(0, 0, 0, 0.72);
     z-index: -1; }
-  #skill .main-hero h1 {
+  #portofolio .main-hero h1 {
     font-size: 30px;
     font-weight: 900;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     margin: 3rem 0 3rem 0; }
-  #skill .main-hero ul li {
+  #portofolio .main-hero ul li {
     display: inline-block;
     list-style: none;
     padding: 0 10px; }
-    #skill .main-hero ul li a {
+    #portofolio .main-hero ul li a {
       text-decoration: none;
       background-color: #0aa4fa;
       padding: 10px 17px;
       color: #ffffff; }
+  #portofolio .grid {
+    padding: 5% 0 40% 0; }
+    #portofolio .grid .col-md-4 img {
+      width: 100%;
+      height: 100%; }
+      #portofolio .grid .col-md-4 img.design {
+        width: 100% !important;
+        height: 35rem !important; }
+    #portofolio .grid .col-md-6 img {
+      width: 100%;
+      height: 100%; }
+      #portofolio .grid .col-md-6 img.creative {
+        width: 100%;
+        height: 12rem;
+        padding: 0 4px 0 4px; }
+    #portofolio .grid .col-md-12 img {
+      width: 100%;
+      height: 100%; }
+      #portofolio .grid .col-md-12 img.design1 {
+        width: 100%;
+        height: 360px !important;
+        padding: 0 4px 0 4px !important; }
+      #portofolio .grid .col-md-12 img.right-gallery {
+        width: 100%;
+        height: 276px !important; }
 
 /*# sourceMappingURL=style.css.map */
