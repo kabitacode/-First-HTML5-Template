@@ -516,32 +516,4 @@ footer {
 input {
   outline: none; }
 
-#portofolio {
-  position: relative;
-  padding: 0 0 10% 0; }
-  #portofolio::before {
-    content: "";
-    position: relative;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.72);
-    z-index: -1; }
-  #portofolio .main-hero h1 {
-    font-size: 30px;
-    font-weight: 900;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    margin: 3rem 0 3rem 0; }
-  #portofolio .main-hero ul li {
-    display: inline-block;
-    list-style: none;
-    padding: 0 10px; }
-    #portofolio .main-hero ul li a {
-      text-decoration: none;
-      background-color: #0aa4fa;
-      padding: 10px 17px;
-      color: #ffffff; }
-
 /*# sourceMappingURL=style.css.map */
