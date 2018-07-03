@@ -51,7 +51,7 @@
         #main-header .top-nav .logo a h3 {
           float: left;
           position: relative;
-          top: 1rem;
+          top: 25px;
           left: 9rem;
           text-transform: uppercase;
           font-size: 25px;
